@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Cafe and Bar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    /* Cafe-themed CSS styles (unchanged) */
+    /* ... (previous styles) ... */
+       body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      height: 500px;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background-color: #006400;
+      border-color: #006400;
+    }
+
+    .btn-primary:hover {
+      background-color: #003300;
+      border-color: #003300;
+    }
+
+    #menu {
+      padding: 50px 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #006400;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .menu-item {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    #specials {
+      background-color: #f8f8f8;
+      padding: 50px 0;
+    }
+
+    .specials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .special-item {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .special-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    #about {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #contact {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-media {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .social-media li {
+      margin: 0 10px;
+    }
+
+    .social-media a {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .newsletter-form input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .newsletter-form button {
+      padding: 10px 20px;
+      background-color: #006400;
+      border-color: #006400;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .newsletter-form button:hover {
+      background-color: #003300;
+      border-color: #003300;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Plant Cafe and Bar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#specials">Specials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Plant Cafe and Bar</h1>
+      <p>Experience the best plant-based cuisine in town</p>
+      <a href="#reservation" class="btn btn-primary">Make a Reservation</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2>Featured Menu Items</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="menu-item1.jpg" alt="Menu Item 1">
+          <h3>Item 1</h3>
+          <p>Description of item 1</p>
+        </div>
+        <div class="menu-item">
+          <img src="menu-item2.jpg" alt="Menu Item 2">
+          <h3>Item 2</h3>
+          <p>Description of item 2</p>
+        </div>
+        <!-- Add more menu items here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="specials">
+    <div class="container">
+      <h2>Special Offers</h2>
+      <div class="specials-grid">
+        <div class="special-item">
+          <img src="special1.jpg" alt="Special 1">
+          <h3>Special 1</h3>
+          <p>Description of special 1</p>
+        </div>
+        <div class="special-item">
+          <img src="special2.jpg" alt="Special 2">
+          <h3>Special 2</h3>
+          <p>Description of special 2</p>
+        </div>
+        <!-- Add more specials here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl in tincidunt aliquam, mi lorem
+        ultricies justo, eget ultrices risus nunc sit amet ex.</p>
+      <p>Phasellus euismod, tortor eget feugiat ultrices, justo nisl aliquam lacus, sed tincidunt felis elit non
+        nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec semper
+        nunc.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>123 Main Street, City, Country</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Email:
